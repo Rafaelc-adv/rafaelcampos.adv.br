@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var end = start + postsPerPage;
 
         postContainer.forEach(function(post, index) {
-            post.style.display = (index >= start && index < end) ? "block" : "none";  // Não utilizar &amp;&amp;
+            post.style.display = (index >= start && index < end) ? "block" : "none";  // Ajuste de exibição
         });
 
         updatePaginationButtons();
@@ -61,4 +61,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     showPage(currentPage);
 });
+
 </script>
